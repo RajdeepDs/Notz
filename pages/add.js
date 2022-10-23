@@ -56,7 +56,7 @@ export default function Add() {
     //Check our user
     const checkUser = async () => {
         if (loading) return;
-        if (!user) route.push("/auth/login");
+        if (!user) { route.push("/auth/login"); }
         if (routeData.id) {
             setNote({ title: routeData.title, description: routeData.description, id: routeData.id });
         }
