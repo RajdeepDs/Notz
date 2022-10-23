@@ -41,7 +41,7 @@ export default function Home() {
     useEffect(() => {
         checkUser();
         getNotes();
-    }, []);
+    }, [user, loading]);
 
     return (
         <div>
